@@ -1,0 +1,25 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "web": "expo start --web",
+    "start": "react-native start",
+    "clean": "bsb -clean-world",
+    "package:install": "yarn add $* && yarn ios:pods",
+    "watch": "BS_WATCH_CLEAR=true bsb -make-world -w",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react-native-appearance": "~0.3.3"
+  },
+  "peerDependencies": {
+    "expo": "~40.0.0",
+    "reason-react-native": "^0.63.2",
+    "reason-react": "^0.9.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "private": true
+}
